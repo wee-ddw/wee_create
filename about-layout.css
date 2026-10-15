@@ -1,0 +1,30 @@
+/* Portrait-led About layout, inspired by the supplied reference. */
+@media (min-width: 801px) {
+  .about { display:block !important; max-width:1100px; margin:0 auto; position:relative; padding-top:48px !important; padding-bottom:48px !important; }
+  .about > .blender-scene { display:none; }
+  .about-copy { position:relative; max-width:930px; min-height:265px; margin:0 auto; padding:8px 0 0 325px; }
+  .about-copy .about-profile { position:absolute; width:265px; height:265px; left:0; top:0; margin:0; z-index:2; }
+  .about-copy .about-profile img { width:265px; height:265px; border:0; border-radius:50%; box-shadow:0 12px 28px rgba(24,26,30,.12); outline:none; object-fit:cover; }
+  .about-copy .about-profile { overflow:hidden; border-radius:50%; }
+  .about-copy .about-profile .profile-kid { position:absolute; inset:0; opacity:0; transition:opacity .45s ease,transform .45s ease; transform:scale(1.06); }
+  .about-copy .about-profile:hover .profile-kid,.about-copy .about-profile:focus-within .profile-kid { opacity:1; transform:scale(1); }
+  .about-copy .about-profile:hover .profile-main,.about-copy .about-profile:focus-within .profile-main { opacity:0; transform:scale(.97); }
+  .about-copy .about-profile .profile-main { transition:opacity .45s ease,transform .45s ease; }
+  .about-copy .about-profile span { display:none; }
+  .about-copy .eyebrow { margin:0 0 2px; font-size:14px; letter-spacing:0; text-transform:none; font-family:var(--sans); font-weight:600; }
+  .about-copy h2 { position:relative; margin:0 0 16px; font-size:clamp(38px,4.25vw,57px); line-height:.92; z-index:1; }
+  .about-copy > p:not(.eyebrow) { max-width:590px; margin-top:0; margin-bottom:12px; font-size:12px; line-height:1.65; }
+  .about-copy .interest-list { margin-top:16px; gap:5px; }
+  .about-copy .interest-list span { padding:7px; font-size:8px; }
+}
+@media (max-width:800px) {
+  .about > .blender-scene { display:none; }
+  .about { display:block; }
+  .about-copy { padding-top:0; }
+  .about-profile { margin-bottom:20px; }
+  .about-profile img { width:136px; height:136px; }
+  .about-profile { position:relative; overflow:hidden; border-radius:50%; }
+  .about-profile .profile-kid { position:absolute; inset:0; opacity:0; transition:opacity .45s ease; }
+  .about-profile:hover .profile-kid,.about-profile:focus-within .profile-kid { opacity:1; }
+  .about-profile:hover .profile-main,.about-profile:focus-within .profile-main { opacity:0; }
+}

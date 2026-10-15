@@ -1,0 +1,22 @@
+.about-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.about-profile img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--paper);
+  box-shadow: 0 0 0 2px var(--accent), 0 9px 22px rgba(24, 26, 30, .16);
+}
+
+.about-profile span {
+  font: 10px var(--mono);
+  color: var(--muted);
+  letter-spacing: .6px;
+  text-transform: uppercase;
+}

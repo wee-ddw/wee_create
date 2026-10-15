@@ -1,0 +1,14 @@
+.project-image { background-image:linear-gradient(0deg,rgba(11,12,14,.74),rgba(11,12,14,.05)),var(--project-image); background-size:cover; background-position:center; }
+.project-image:before { display:none; }
+.project-image h3,.project-image p { color:#fff; }
+
+/* Purple filter controls for the dark Selected Builds section. */
+.work .filter { border-color:rgba(174,164,255,.65); color:#e9e5ff; background:rgba(130,111,241,.12); }
+.work .filter:hover,.work .filter.active { background:var(--accent); border-color:var(--accent); color:#fff; box-shadow:0 5px 16px rgba(130,111,241,.28); }
+.work .filter:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+
+/* Keep the build gallery compact and gap-free as cards are filtered or added. */
+.gallery { grid-template-columns:repeat(3,1fr); grid-auto-rows:220px; grid-auto-flow:row dense; }
+.gallery .project,.gallery .project:nth-child(2),.gallery .project:nth-child(4),.gallery .project:nth-child(5) { grid-column:auto; grid-row:auto; }
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}}
+@media(max-width:420px){.gallery{grid-template-columns:1fr;grid-auto-rows:210px}}

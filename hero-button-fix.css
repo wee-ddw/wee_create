@@ -1,0 +1,7 @@
+/* Loaded last: protects hero secondary-button contrast from shared button styles. */
+.hero .button.secondary,
+.hero .button.secondary span { color:var(--ink)!important; }
+.hero .button.secondary:hover,
+.hero .button.secondary:focus-visible,
+.hero .button.secondary:hover span,
+.hero .button.secondary:focus-visible span { background:var(--ink)!important; border-color:var(--ink)!important; color:#fff!important; }
