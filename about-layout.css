@@ -21,10 +21,35 @@
   .about > .blender-scene { display:none; }
   .about { display:block; }
   .about-copy { padding-top:0; }
-  .about-profile { margin-bottom:20px; }
-  .about-profile img { width:136px; height:136px; }
-  .about-profile { position:relative; overflow:hidden; border-radius:50%; }
-  .about-profile .profile-kid { position:absolute; inset:0; opacity:0; transition:opacity .45s ease; }
+  .about-profile {
+    position:relative;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto 18px;
+    gap:12px;
+    overflow:visible;
+    border-radius:0;
+  }
+  .about-profile img {
+    width:112px!important;
+    height:112px!important;
+    flex:0 0 112px;
+    border-radius:50%;
+  }
+  .about-profile .profile-kid {
+    position:absolute;
+    inset:0 auto auto 0;
+    width:112px!important;
+    height:112px!important;
+    border-radius:50%;
+    opacity:0;
+    transition:opacity .45s ease;
+  }
   .about-profile:hover .profile-kid,.about-profile:focus-within .profile-kid { opacity:1; }
   .about-profile:hover .profile-main,.about-profile:focus-within .profile-main { opacity:0; }
+  .about-profile span {
+    max-width:120px;
+    font-size:9px;
+    line-height:1.35;
+  }
 }
