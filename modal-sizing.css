@@ -115,6 +115,27 @@
   grid-column: 1 / -1;
   margin-bottom: 0;
 }
+.item-type-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.item-type-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.item-type-options input { width: auto; margin: 0; }
+.swatch.featured {
+  outline: 2px solid #dc3d45;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(220, 61, 69, .13);
+}
 .quantity-field { grid-column: 1 / -1; }
 .field:has(.quantity) { grid-column: 1 / -1; }
 .name-toggle { grid-column: 1 / -1; }
