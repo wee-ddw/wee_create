@@ -22,7 +22,7 @@
   gap: 8px;
   min-width: 104px;
   padding: 8px 10px;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: 0;
   background: rgba(255, 255, 255, .1);
   color: #fff;
   font-size: 10px;
@@ -45,7 +45,6 @@
 .tool-item:focus-within {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, .2);
-  border-color: rgba(255, 255, 255, .65);
 }
 
 @keyframes toolFloat {
